@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=latin-ext');
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 78px;
+    text-align: center;
+    color: #1C361C;
+}
+
+h2 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 40px;
+    color: #313731;
+}
+
+p {
+    font-family: Arial Unicode MS;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: left;
+    color: #313731;
+}
+
+h3 {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: left;
+    color: #313731;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.front-page {
+    text-align: left;
+    
+    padding-top: 15em;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    position: relative;
+    z-index: 3;
+}
+
+footer {
+    background: linear-gradient(180deg, #1C361C 0%, rgba(28, 54, 28, 0.9) 50.52%, rgba(28, 54, 28, 0.71) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    height: 140px;
+    align-items: center;
+    height: 100%;
+}
+
+.footertext {
+    font-family: Arial Unicode MS;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: #F7F7F7;
+    margin-left: .8em;
+    margin-right: .8em;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    width: 714px;
+    height: 50px;
+    right: .8em;
+    top: .8em;
+    z-index: 999;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    width: 220px;
+    height: 24px;
+    right: .8em;
+    top: .8em;
+}
+
+
+.navigation-item {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    margin: 10px 15px;
+    color: #1C361C;
+}
+
+a:link, a:visited {
+    color: #1C361C;
+    text-decoration: none;
+}
+ 
+a:hover, a:active, .navigation-item-a {
+    color: #EA6A25;
+    text-decoration: none;
+    font-size: 35px;
+}
+
+
+.home-menu {
+    display: flex;
+    justify-content: space-around;
+    top: 750px;
+    
+}
+
+.portrait {
+    position: relative;
+    width: 425px;
+    height: 363.91px;
+    left: 507px;
+    top: 150px;
+}
+
+.ubladh {
+    position: relative;
+    width: 575px;
+    height: 80px;
+    left: 432px;
+    top: 500px;
+}
+

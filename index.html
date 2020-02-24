@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: 50% auto;
+            grid-template-rows: 60% auto;
+            grid-template-areas: "graphics text"
+                                 "triangle triangle";
+        }
+
+        header {
+            grid-area: graphics;
+        }
+        .front-page {
+            grid-area: text;
+        }
+        .triangle {
+            grid-area: triangle;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-top: 3em;
+        }
+
+        .home-button:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="graphics">
+        <header>
+            <img src="images/Art2.svg" class=grafiikka>
+        </header>
+    </div>
+   
+   <div class="front-page">
+        <h2>Hi there! My name is Ulrica Bladh.</h2>
+        <h3>I am an information networks major at Aalto University. I am currently looking for work opportunities where I can challenge myself.<br><br>Let's get to know eachother!</h3>
+    </div>
+
+    <div class="triangle">
+        <a href="about.html"><img src="images/home-triangle.svg" alt="home" class="home-button"></a>
+    </div>
+
+
+</body>
+</html>

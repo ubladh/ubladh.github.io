@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        
+        @media only screen and (min-width: 768px){
+            body {
+                display: grid;
+                grid-template-rows: 110px 250px 400px 250px 1100px 150px;
+                grid-template-columns: 50% auto;
+                grid-template-areas: "menu menu"
+                                    "title title"
+                                    "photo introtext"
+                                    "sub sub"
+                                    "hobby hobby"
+                                    "footer footer";
+            }
+
+
+            .menu {
+                grid-area: menu;
+            }
+
+            .title {
+                grid-area: title;
+                
+                margin-top: 7%;
+                text-align: left;
+            }
+
+            .photo {
+                grid-area: photo;
+                margin-top: 5%;
+                margin-left: 20%;
+                margin-right: 5%;
+            }
+
+            .introtext {
+                grid-area: introtext;
+                width: 85%;
+                padding-right: 5%;
+            }
+
+            .subheading {
+                grid-area: sub;
+                margin-top: 7%;
+
+            }
+
+            .hobby-container {
+                grid-area: hobby;
+            }
+
+            figure {
+                text-align: center;            
+                padding: .8em;
+            }
+
+            .hobby-container ul {
+                display: flex;
+            }
+
+            footer {
+                grid-area: footer;
+            }
+        }
+
+        
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="menu" id="nav">
+                    <li class="navigation-item"><a href="about.html">About</a></li>
+                    <li class="navigation-item"><a href="projects.html">Projects</a></li>
+                    <li class="navigation-item"><a href="info.html">CV & info</a></li>
+                    <li class="navigation-item"><img src="images/Line.svg" alt="line"></li>
+                    <li class="navigation-item"><a href="https://www.instagram.com/ulricabladh/"><img src="images/instagram2.svg" alt="ig"></a></li>
+                    <li class="navigation-item"><a href="https://www.facebook.com/ulrica.bladh.56?ref=bookmarks"><img src="images/facebook2.svg" alt="fb"></a></li>
+                    <li class="navigation-item"><a href="#"><img src="images/linkedin2.svg" alt="linkedin"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="title"> <h1>WHO IS ULRICA BLADH?</h1></div>
+       
+    <div class="photo"><img src="images/Ellipse-portrait.png" alt="Ulrica Bladh"></div>
+
+    <div class="introtext"><h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae. Pellentesque eget ligula scelerisque, consectetur ipsum eget, rutrum metus. </h2></div>
+        
+
+    <div class="subheading"><h1>OTHER INTERESTS</h1></div>
+
+
+    <div class="hobby-container">
+        <ul>
+            <li>
+                <figure>
+                    <img src="images/Ellipse-skating.png" alt="Skating" style="padding: 3em;">
+                    <h2>Sport</h2>
+                    <p style="text-align: center;">Sport has been a part of my life in the form of synchronized iceskating. I was a part of the national team of Finland for three years and competed at three junior world championships. After skating I’ve found joy in varios sports but mainly in Snowboarding.</p>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Ellipse-crafts.png" alt="Design" style="padding: 3em;">
+                    <h2>Design</h2>
+                    <p style="text-align: center;">I have been designing and sewing clothes for myself since my childhood. My love for Finnish design, both fashion and furniture, has grown stronger over the years and I am a proud supporter of sustainable choices in design</p>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/Ellipse.svg" alt="?" style="padding: 3em;">
+                    <h2>Lorem ipsum</h2>
+                    <p style="text-align: center;">Dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae. Pellentesque eget ligula scelerisque, consectetur ipsum eget, rutrum metus.  </p>
+                </figure>
+            </li>
+        </ul>
+
+    </div>
+
+    <footer>
+        <div class="footer-container"> 
+            <p class="footertext">Get in touch! – ulrica@bladh.org</p>
+        </div>
+        <div class="footer-container">
+            <p class="footertext">Ulrica Bladh, 2020</p>
+        </div>
+    </footer>
+</body>
+</html>

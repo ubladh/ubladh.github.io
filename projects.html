@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: 110px 250px 550px 550px 600px 150px;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "menu menu"
+                                 "projects projects"
+                                 "pic1 first"
+                                 "second pic2"
+                                 "pic3 third"
+                                 "footer footer";
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .projects {
+            grid-area: projects;
+            margin-top: 7%;
+        }
+
+        .first {
+            grid-area: first;
+        }
+
+        .pic1 {
+            grid-area: pic1;
+        }
+
+        .second {
+            grid-area: second;
+            padding-top: 10%;
+            padding-left: 15%;
+        }
+
+        .pic2 {
+            grid-area: pic2;
+            margin-top: 15%;
+            margin-left: 25%;
+        }
+
+        .third {
+            grid-area: third;
+        }
+
+        .pic3 {
+            grid-area: pic3;
+        }
+
+        footer {
+            grid-area: footer;
+        }
+
+        .pic1, .pic3 {
+            margin-top: 19%;
+            margin-left: 25%;
+        }
+
+        .first, .third {
+            padding-top: 10%;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="menu" id="nav">
+                    <li class="navigation-item"><a href="about.html">About</a></li>
+                    <li class="navigation-item" style="color: #EA6A25;"><a href="projects.html">Projects</a></li>
+                    <li class="navigation-item"><a href="info.html">CV & info</a></li>
+                    <li class="navigation-item"><img src="images/Line.svg" alt="line"></li>
+                    <li class="navigation-item"><a href="https://www.instagram.com/ulricabladh/"><img src="images/instagram2.svg" alt="ig"></a></li>
+                    <li class="navigation-item"><a href="https://www.facebook.com/ulrica.bladh.56?ref=bookmarks"><img src="images/facebook2.svg" alt="fb"></a></li>
+                    <li class="navigation-item"><a href="#"><img src="images/linkedin2.svg" alt="linkedin"></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    
+    <div class="projects">
+        <h1>TAKE A LOOK AT SOME OF MY PROJECTS</h1>
+    </div>
+
+    <div class="pic1"><img src="images/Ellipse.svg" alt="1"></div>
+
+    <div class="first"><h2>Project name</h2><p>About the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae.<br><p>My part in the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae. </p></div>
+
+    <div class="second"><h2>Project name</h2><p>About the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae.<br><p>My part in the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae. </p></div>
+    
+    <div class="pic2"><img src="images/Ellipse.svg" alt="2"></div>
+    
+    <div class="pic3"><img src="images/Ellipse.svg" alt="3"></div>
+
+    <div class="third"><h2>Project name</h2><p>About the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae.<br><p>My part in the project: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis imperdiet vestibulum libero, at ornare urna varius vitae. </p></div>
+
+    <footer>
+        <div class="footer-container"> 
+            <p class="footertext">Get in touch! – ulrica@bladh.org</p>
+        </div>
+        <div class="footer-container">
+            <p class="footertext">Ulrica Bladh, 2020</p>
+        </div>
+    </footer>
+</body>
+</html>

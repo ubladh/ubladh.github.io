@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: 15% 20% auto 15%;
+            grid-template-columns: 50% auto;
+            grid-template-areas: "menu menu"
+                                 "res res"
+                                 "ulrica info"
+                                 "footer footer";
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .resume {
+            grid-area: res;
+            display: flex;
+            justify-content: left;
+            margin-top: 20%;
+            
+        }
+
+
+        .ulrica {
+            grid-area: ulrica;
+            text-align: center;
+            margin-top: 15%;
+            margin-left: 0%;
+        }
+
+        .info-list {
+            grid-area: info;
+            margin-top: 10%;
+            margin-left: 2em;
+        }
+
+        footer {
+            grid-area: footer;
+            position: absolute;
+            width: 1440px;
+            height: 147px;
+            left: calc(50% - 1440px/2);
+            bottom: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul class="menu" id="nav">
+                    <li class="navigation-item"><a href="about.html">About</a></li>
+                    <li class="navigation-item"><a href="projects.html">Projects</a></li>
+                    <li class="navigation-item"><a href="info.html">CV & info</a></li>
+                    <li class="navigation-item"><img src="images/Line.svg" alt="line"></li>
+                    <li class="navigation-item"><a href="https://www.instagram.com/ulricabladh/"><img src="images/instagram2.svg" alt="ig"></a></li>
+                    <li class="navigation-item"><a href="https://www.facebook.com/ulrica.bladh.56?ref=bookmarks"><img src="images/facebook2.svg" alt="fb"></a></li>
+                    <li class="navigation-item"><a href="#"><img src="images/linkedin2.svg" alt="linkedin"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </div>
+
+
+    <div>
+        <ul class="resume">
+            <li><h2>Download my resumé</h2></li>
+            <li><img src="images/file-text2.svg" alt="icon"></li>
+        </ul>
+    </div>
+
+
+    <div class="ulrica">
+        <h2>Ulrica Bladh</h2>
+    </div>
+
+    <div class="info-list">
+        <ul>
+            <li>
+                <h2><img src="images/phone2.svg" alt="icon">   +358 442780160</h2>
+            </li>
+            <li>
+                <h2><img src="images/at-sign2.svg" alt="icon">   ulrica@bladh.org</h2>
+            </li>
+            <li>
+                <h2><br><img src="images/map-pin2.svg" alt="icon">Espoo</h2>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footer-container"> 
+            <p class="footertext">Get in touch! – ulrica@bladh.org</p>
+        </div>
+        <div class="footer-container">
+            <p class="footertext">Ulrica Bladh, 2020</p>
+        </div>
+    </footer>
+
+</body>
+</html>
